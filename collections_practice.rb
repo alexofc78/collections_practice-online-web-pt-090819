@@ -30,8 +30,8 @@ def find_a(array)
   array.select {|name| name[0] == "a"}
 end
 
-def sum_array(integer)
-  array.inject
+def sum_array(array)
+  array.inject { |sum, n| sum + n }
 end
 
 def add_s(array)
